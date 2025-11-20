@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos - Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🛍️ Catálogo de Produtos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#demo-form" class="btn-primary">Cadastrar Produto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Bem-vindo ao Sistema de Catálogo</h2>
+                    <p>Demonstração estática do projeto desenvolvido com HTML, CSS e JavaScript</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn-primary">Ver Produtos</a>
+                        <a href="#demo-form" class="btn-secondary">Cadastrar Novo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Produtos -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div class="filters">
+                    <input type="text" id="search" placeholder="🔍 Buscar produtos..." class="search-input">
+                    <select id="category-filter" class="filter-select">
+                        <option value="">Todas as categorias</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="livros">Livros</option>
+                        <option value="roupas">Roupas</option>
+                        <option value="casa">Casa e Decoração</option>
+                    </select>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Produtos serão carregados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Demonstração do Formulário -->
+        <section id="demo-form" class="form-section">
+            <div class="container">
+                <h2>Cadastrar Novo Produto</h2>
+                <div class="demo-notice">
+                    <p>🚀 <strong>Esta é uma demonstração estática!</strong> O formulário completo com PHP e MySQL está disponível no repositório do projeto.</p>
+                </div>
+                
+                <form id="product-form" class="product-form">
+                    <div class="form-group">
+                        <label for="product-name">Nome do Produto *</label>
+                        <input type="text" id="product-name" name="product-name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-description">Descrição</label>
+                        <textarea id="product-description" name="product-description" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="product-price">Preço (R$) *</label>
+                            <input type="number" id="product-price" name="product-price" step="0.01" min="0" required>
+                            <span class="error-message" id="price-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-category">Categoria *</label>
+                            <select id="product-category" name="product-category" required>
+                                <option value="">Selecione uma categoria</option>
+                                <option value="eletronicos">Eletrônicos</option>
+                                <option value="livros">Livros</option>
+                                <option value="roupas">Roupas</option>
+                                <option value="casa">Casa e Decoração</option>
+                            </select>
+                            <span class="error-message" id="category-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-image">Imagem do Produto (URL)</label>
+                        <input type="url" id="product-image" name="product-image" placeholder="https://exemplo.com/imagem.jpg">
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-large">Cadastrar Produto</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Sobre o Projeto</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>🎓 Projeto Acadêmico - Desenvolvimento Web</h3>
+                        <p>Este é um sistema completo de catálogo de produtos desenvolvido como parte de um projeto acadêmico, demonstrando habilidades em:</p>
+                        <ul>
+                            <li><strong>Front-end:</strong> HTML5 semântico, CSS3 responsivo, JavaScript ES6+</li>
+                            <li><strong>Back-end:</strong> PHP com arquitetura MVC</li>
+                            <li><strong>Banco de Dados:</strong> MySQL com relacionamentos</li>
+                            <li><strong>Funcionalidades:</strong> CRUD completo (Create, Read, Update, Delete)</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="about-links">
+                        <a href="https://github.com/seu-usuario/projeto-catalogo" class="btn-secondary" target="_blank">
+                            📁 Ver Código Completo
+                        </a>
+                        <a href="#demo-form" class="btn-primary">
+                            🚀 Testar Demonstração
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Catálogo de Produtos - Projeto Acadêmico</p>
+            <div class="footer-links">
+                <a href="https://github.com/seu-usuario/projeto-catalogo" target="_blank">GitHub</a>
+                <a href="#about">Sobre</a>
+                <a href="#demo-form">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>✅ Produto Cadastrado com Sucesso!</h3>
+            <p>Na versão completa com PHP, este produto seria salvo no banco de dados MySQL.</p>
+            <div class="modal-product-info">
+                <p><strong>Nome:</strong> <span id="modal-product-name"></span></p>
+                <p><strong>Preço:</strong> R$ <span id="modal-product-price"></span></p>
+                <p><strong>Categoria:</strong> <span id="modal-product-category"></span></p>
+            </div>
+            <button class="btn-primary" id="modal-close-btn">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
