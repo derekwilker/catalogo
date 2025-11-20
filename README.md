@@ -13,7 +13,7 @@ Esta é uma demonstração estática do sistema de catálogo de produtos desenvo
 -  Animações e interações
 
 ##  Versão Completa
-A versão completa com PHP e MySQL está disponível em: https://github.com/derekwilker/catalogo/tree/6097439b8762d7cea332e67115826c544a1c8214/php
+A versão completa com PHP e MySQL está disponível em: https://github.com/derekwilker/catalogo/tree/bfa0ec3786a61cdd1ec57cf270dba56760dc2e94/versao-completa
 
 ## Tecnologias
 - HTML5, CSS3, JavaScript
