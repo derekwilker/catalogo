@@ -21,6 +21,6 @@ A versão completa com PHP e MySQL está disponível em:
 - GitHub Pages
 
 ## Alunos
-Derek Wilker Furtado Leal - 202502408722
-Eduardo Cristo Figueiredo - 202502408617
-Eduardo Melo Graim de Matos - 202502412681
+- Derek Wilker Furtado Leal - 202502408722
+- Eduardo Cristo Figueiredo - 202502408617
+- Eduardo Melo Graim de Matos - 202502412681
